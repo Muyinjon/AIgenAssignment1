@@ -12,7 +12,7 @@ Deep Copy: Create a deep copy of a dictionary using the copy module.
 '''
 def line():
     print("------------------------")
-    print(book)
+
 
 book= {"book's title" : "rich dad, poor dad", "author":"Robert Kiyosaki" , "publication year": 1997}
 print(book["author"])
@@ -42,7 +42,21 @@ for key, value in book.items():
 
 line()
 
-dict1 = {1:1,2:2**2,3:3**2,4:4**2,5:5**2}
-dict2 = {1:1,2:2,3:3,4:4,5:5}
+dict_square = {x:x**2 for x in range(1,6)}
+print(dict_square)
 
+line()
 
+merge1 = {'name':'muyin','age':23,'country':'uzbekistan'}
+merge2 = {'name':'jonny','age':69, 'ID':420,'country':'USA'}
+merge1.update(merge2)
+print(merge1)
+
+line()
+import copy
+
+dictorg = {'name':'muyin','age':23,'country':'uzbekistan'}
+deepdopy = copy.deepcopy(dictorg)
+deepdopy['name']= ({'ronny'})
+print(dictorg)
+print(deepdopy)
