@@ -5,3 +5,27 @@ Tuple to List: Convert a tuple into a list.
 List to Tuple: Convert a list into a tuple.
 Tuple Unpacking: Given a tuple (x, y, z), unpack its values into three variables.
 '''
+import math
+
+def line():
+    return print("---------------------------------------------------------------------------------")
+line()
+
+students = ('jon','bek','rex','alex','zeki')
+print(students[3])
+
+line()
+
+tupletolist = list(students)
+print(tupletolist)
+
+line()
+
+listtotuple = tuple(tupletolist)
+print(listtotuple)
+
+line()
+print()
+
+a = math.factorial(4)
+print(a)
